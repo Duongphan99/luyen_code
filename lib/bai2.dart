@@ -1,5 +1,7 @@
 //Bài 2: Tính S(n) = 1^2 + 2^2 + … + n^2
 
+import 'dart:math';
+
 void main() {
   print(tinhTong(5));
 }
@@ -15,10 +17,10 @@ void main() {
 
 int tinhTong(int n) {
   int i = 0;
-  int s = 0;
+  double s = 0;
   while (i <= n) {
-    s = s + i * 2;
+    s = s + pow(i, 2);
     i++;
   }
-  return s;
+  return s.round();
 }
