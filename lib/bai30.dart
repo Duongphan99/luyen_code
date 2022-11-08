@@ -4,7 +4,7 @@ void main() {
   print(numberPerfect(7));
 }
 
-dynamic numberPerfect(int n) {
+String numberPerfect(int n) {
   int perfect = 0;
   for (int i = 1; i < n; i++) {
     if (n % i == 0) {
